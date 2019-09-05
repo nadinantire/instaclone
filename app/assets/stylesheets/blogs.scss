@@ -1,0 +1,31 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.image{
+    width: 300px;
+}
+.input{
+    width: 10px;
+}
+.form-control{
+    width: 400px;
+}
+.edit{
+    width: 400px;
+    float:right;
+}
+.page-footer{
+    background-color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: blue;
+    text-align: center; 
+}
+.rounded-circle{
+    widows: 100px;
+    height: 100px;
+}

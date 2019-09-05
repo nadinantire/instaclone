@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+<h1>Blogs</h1>
+<%= link_to 'New Blog', new_blog_path, class:"btn btn-info" %>
+    <% @blogs.each do |blog| %>
+      <p><%= blog.content %></p>
+      <% if blog.image.url %>
+      <%= image_tag blog.image.url, class:"image" %>
+      <% end %>
+        <p><%= blog.user.name %></p>
+        <% if user_signed_in? %>
+        <% if current_user.profile == blog.user_id %>
+        <%= link_to 'Show', blog, class:"btn btn-primary" %>
+        <%= link_to 'Edit', edit_blog_path(blog), class:"btn btn-primary"%>
+        <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-primary" %>
+    <% else %>
+    <%= link_to 'Show', blog, class:"btn btn-primary" %>
+        <% end %>
+        <% end %>
+    <% end %>
+<br><br><br>
+
