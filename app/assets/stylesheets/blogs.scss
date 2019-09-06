@@ -3,8 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.image{
-    width: 300px;
+.image2{
+    width: 100%;
+    
+}
+.navbar{
+    width: 100%;
 }
 .input{
     width: 10px;
@@ -26,6 +30,33 @@
     text-align: center; 
 }
 .rounded-circle{
-    widows: 100px;
+    width: 100px;
     height: 100px;
+}
+.center{
+margin-left: 2em;
+}
+.card-body{
+    float: right;
+    
+}
+.style{
+    font-family: cursive;
+    font-size: 60px;
+    
+}
+.container{
+    background:cornsilk;
+    width:700px;
+    padding:10px;
+    border:1px solid blanchedalmond;
+    margin-bottom: 10px;
+}
+.rounded-circle1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%
+}
+.image{
+    width: 300px;
 }

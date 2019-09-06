@@ -1,5 +1,5 @@
 class ProfilesController < ApplicationController
-  before_action :set_profile, only: [ :update, :destroy]
+  before_action :set_profile, only: [ :update, :destroy, :show]
   # GET /profiles
   # GET /profiles.json
   def index
@@ -8,7 +8,7 @@ class ProfilesController < ApplicationController
   # GET /profiles/1
   # GET /profiles/1.json
   def show
-    @profile = Profile.all
+    
   end
   # GET /profiles/new
   def new

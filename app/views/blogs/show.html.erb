@@ -1,17 +1,13 @@
 <p id="notice"><%= notice %></p>
 <p>
-  <strong>Content:</strong>
   <%= @blog.content %>
 </p>
 <p>
-  <strong>Image:</strong>
   <% if @blog.image.url %>
       <%= image_tag @blog.image.url, class:"image" %>
-  
-      <% end %>
+  <% end %>
 </p>
 <p>
-  <strong>User:</strong>
   <%=@blog.user.name %>
 </p>
 <% unless @blog.user_id == current_user.id %>

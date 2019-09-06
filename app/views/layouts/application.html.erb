@@ -13,8 +13,9 @@
   </head>
   <body>
   <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
-  <a class="navbar-brand" href="#">instagram</a>
+  <a class="navbar-brand" href="#"><div class="style">instagram</div></a>
 </nav>
+
   <% if notice %>
     <p class="alert alert-success"><%= notice %></p>
   <% end %>
@@ -29,9 +30,10 @@
     <%= link_to "Sign up", new_user_registration_path, class:"btn btn-outline-primary"  %>
     <%= link_to "Login", new_user_session_path, class:"btn btn-outline-primary"  %>
   <% end %>
+  <div class="card-body">
   <% if user_signed_in? %>
    <% if current_user.profile == nil %>
-     <p><%= image_tag 'lustreb - Copy.PNG', class:"rounded-circle" %></p>
+     <p><%= image_tag 'pro1.jpg', class:"rounded-circle" %></p>
      <%= link_to 'upload a profile picture', new_profile_path, class: "btn btn-success " %>
    <% else %>
    <% if current_user.profile.image? %>
@@ -40,6 +42,7 @@
     <% end %>
    <% end %>
    <% end %>
+   </div>
     <%= yield %> 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
