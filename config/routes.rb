@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
+  root 'home#index'
   resources :contacts
   resources :models
   resources :profiles
   resources :blogs
-  root 'home#index'
   resources :blogs
   devise_for :users, controllers: {
     registrations: "registrations"

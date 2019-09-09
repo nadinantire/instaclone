@@ -1,8 +1,6 @@
 <p id="notice"><%= notice %></p>
-
 <h1>Favorites</h1>
 <div class="container">
- 
     <% @favorites.each do |favorite| %>
        <p> <%= favorite.blog.content %></p>
        <p> <%= image_tag favorite.blog.image.url, class: "image" %></p>
