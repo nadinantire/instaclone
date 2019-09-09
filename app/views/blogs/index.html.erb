@@ -15,9 +15,10 @@
                             </p>
                             <% end %>
                         <% end %>
-                        <% if blog.image.url %>
                         
+                        <% if blog.image.url %>
                         <%= image_tag blog.image.url, class:"image2" %>
+                        <% end %>
                         <p><%= blog.content %></p>
                         <%= link_to 'Show', blog, class:"btn btn-primary" %>
                        
@@ -29,4 +30,4 @@
                    
         </div>
         <% end %>
-    <% end %>
+    
