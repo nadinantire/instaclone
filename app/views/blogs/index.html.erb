@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
+<%= link_to 'Favorites', favorites_path, class:"btn btn-info" %>
 <div class="center">
-    <h1>Posts</h1>
+    <h1>Posts</h1
+  
     <%= link_to 'New Post', new_blog_path, class:"btn btn-info" %>
 </div>
                         <% @blogs.each do |blog| %>
