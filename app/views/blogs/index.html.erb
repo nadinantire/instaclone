@@ -2,9 +2,10 @@
 <%= link_to 'Favorites', favorites_path, class:"btn btn-info" %>
 <div class="center">
     <h1>Posts</h1
-  
-    <%= link_to 'New Post', new_blog_path, class:"btn btn-info" %>
+
+    
 </div>
+<%= link_to 'New Post', new_blog_path, class:"btn btn-info" %>
                         <% @blogs.each do |blog| %>
                             <div class="container">
                             <% if blog.user.profile == nil %>
