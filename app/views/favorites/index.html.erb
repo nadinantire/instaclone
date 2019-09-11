@@ -4,6 +4,7 @@
     <% @favorites.each do |favorite| %>
         <%if favorite.user.name == current_user.name %>
         <%if favorite.present?%>
+        <p> <%= favorite.blog.user.name %></p>
         <p> <%= favorite.blog.content %></p>
         <p> <%= image_tag favorite.blog.image.url(), class: "image" %> </p>
         <p> <%= favorite.user.name %></p> 
